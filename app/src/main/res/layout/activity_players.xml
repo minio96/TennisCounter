@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_above="@+id/player2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="75dp"
+            android:text="Type in players' names"
+            android:textSize="25dp"
+            android:layout_centerHorizontal="true"
+            android:textColor="#111111"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+        <EditText
+            android:id="@+id/player1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="160dp"
+            android:hint="Player 1"
+            />
+
+        <EditText
+            android:id="@+id/player2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:layout_below="@+id/player1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+
+            android:hint="Player 2"
+            />
+
+        <Button
+            android:id="@+id/confirm3_btn"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/player2"
+            android:layout_toLeftOf="@+id/confirm5_btn"
+            android:layout_toStartOf="@+id/confirm5_btn"
+            android:text="Play 3 sets" />
+
+        <Button
+            android:id="@+id/confirm5_btn"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/player2"
+            android:layout_marginEnd="45dp"
+            android:layout_marginRight="45dp"
+            android:text="Play 5 sets" />
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
